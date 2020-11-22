@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Characters from "./containers/Characters";
 import Comics from "./containers/Comics";
 import Favoris from "./containers/Favoris";
@@ -28,6 +29,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

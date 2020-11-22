@@ -1,10 +1,30 @@
 import React from "react";
-// import {Link, useHistory} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-  // const history = useHistory();
-
-  return <div>Home</div>;
+  return (
+    <div className="home">
+      <h1>Welcome on Marvel Universe!</h1>
+      Please select an option to go to:
+      <ul>
+        <li>
+          <Link className="home-link" to="/characters">
+            Personnages
+          </Link>
+        </li>
+        <li>
+          <Link className="home-link" to="/comics">
+            Comics
+          </Link>
+        </li>
+        <li>
+          <Link className="home-link" to="/favoris">
+            Favoris
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default Home;
